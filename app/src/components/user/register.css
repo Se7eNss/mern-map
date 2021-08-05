@@ -1,0 +1,48 @@
+.registerContainer{
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;right:0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-between;
+}
+.bg{height:100vh;
+    width: 100vw;
+    background: rgba(23, 25, 26, 0.822);
+}
+button{
+    padding: 7px;
+    border: none;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.logo img{
+    height: 100%;
+}
+.success{
+    color: green;
+    font-size: 12;
+}
+.error{
+    color: red;
+    font-size: 12;
+}
+.registerCancel{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
