@@ -6,7 +6,6 @@ import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/user/Register";
 import Login from "./components/user/Login";
-import ReactMapGL, {Marker} from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
 
