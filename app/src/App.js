@@ -6,9 +6,13 @@ import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/user/Register";
 import Login from "./components/user/Login";
+import ReactMapGL, {Marker} from 'react-map-gl'
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
 
 
 function App() {
+  mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
   const myStorage = window.localStorage;
   const [currentUsername, setCurrentUsername] = useState(myStorage.getItem("user"));
   const [pins, setPins] = useState([]);
