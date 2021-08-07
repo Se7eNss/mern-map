@@ -6,8 +6,6 @@ import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/user/Register";
 import Login from "./components/user/Login";
-import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl';
 
 
 function App() {
@@ -77,7 +75,7 @@ function App() {
     setCurrentUsername(null);
     myStorage.removeItem("user");
   };
-  mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
+ 
   return (
     <div style={{ height: "100vh", width: "100%" }}>
       <ReactMapGL
