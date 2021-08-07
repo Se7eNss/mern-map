@@ -47,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://mern-mapping.herokuapp.com/"
+  "proxy": "https://mern-mapping.herokuapp.com/api/v1"
 }
