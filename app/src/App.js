@@ -6,11 +6,7 @@ import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/user/Register";
 import Login from "./components/user/Login";
-import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl';
 
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 function App() {
   const myStorage = window.localStorage;
